@@ -1,18 +1,23 @@
 <template>
   <div id="app">
-    <ScrollingDateComponent />
+    <nav>
+      <router-link to="/">Dashboard</router-link>
+      <router-link to="/overview">Overview</router-link>
+    </nav>
+    <main class="pageWrapper">
+      <router-view />
+    </main>
   </div>
 </template>
 
-<script>
-import ScrollingDateComponent from "./components/ScrollingDateComponent.vue";
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+import VueRouter from "vue-router";
 
-export default {
-  name: "app",
-  components: {
-    ScrollingDateComponent
-  }
-};
+Vue.use(VueRouter);
+
+@Component
+export default class App extends Vue {}
 </script>
 
 <style>

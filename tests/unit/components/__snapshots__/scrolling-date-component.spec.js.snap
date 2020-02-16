@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SrollingDateComponent.vue renders 1`] = `
+<div class="hello">
+  <div class="scroll-container">
+    <ul></ul>
+    <infinite-loading-stub distance="100" direction="bottom" identifier="loader"></infinite-loading-stub>
+  </div>
+</div>
+`;
