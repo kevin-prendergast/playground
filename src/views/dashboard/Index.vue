@@ -1,5 +1,8 @@
 <template>
-    <ScrollingDateComponent />
+    <div>
+        <h1>Dashboard</h1>
+        <ScrollingDateComponent />
+    </div>
 </template>
 
 <script lang="ts">
